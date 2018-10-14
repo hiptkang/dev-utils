@@ -19,16 +19,16 @@ tar -xvf $NAME.tar.gz
 
 ```sh
 # .tar (two files)
-tar -xvf $NAME.tar $FILE_NAME1 $FILE_NAME2
+tar -xvf $NAME.tar $FILE_NAME $DIR_NAME
 
 # .tar (wildcard)
 tar -xvf $NAME.tar '*.cpp"
 
 # .tar.gz
-tar -zxvf $NAME.tar.gz $FILE_NAME $FILE_NAME2
+tar -zxvf $NAME.tar.gz $FILE_NAME $DIR_NAME
 
 # .tar.bz2
-tar -jxvf $NAME.tar.gz $FILE_NAME $FILE_NAME2
+tar -jxvf $NAME.tar.gz $FILE_NAME $DIR_NAME
 ```
 
 ## Compress
