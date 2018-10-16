@@ -15,7 +15,7 @@ tar -xvf $NAME.tar -C $DEST_DIR
 tar -xvf $NAME.tar.gz
 ```
 
-### untar specific files in archive file
+### untar specific files in the archive file
 
 ```sh
 # .tar (two files)
