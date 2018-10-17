@@ -73,6 +73,7 @@ tar -rvf $NAME.tar $FILEs $DIRs
 
 - c – create a archive file.
 - x – extract a archive file.
+- k – keep old files.
 - v – show the progress of archive file.
 - f – filename of archive file.
 - t – viewing content of archive file.
@@ -86,3 +87,17 @@ tar -rvf $NAME.tar $FILEs $DIRs
 # list content
 tar -tvf $FILE
 ```
+### gzip
+
+```sh
+# tar.gz to tar
+gzip -d test.tar.gz
+```
+
+### bzip2
+
+```sh
+# tar.bz2 to tar
+bzip2 -d test.tar.bz2
+```
+
