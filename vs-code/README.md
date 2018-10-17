@@ -3,11 +3,11 @@
 ## Workspace settings
 - file: ${workspaceFolder}/.vscode/settings.json
 - settings menu: File > Preferences > Settings [Ctrl+']
-- settings for python
+- settings for python virtualenv
 ```js
 {
     "python.envFile": "${workspaceFolder}/.env",
-    "python.venvPath": "~/.ve-tf",
-    "python.pythonPath": "~/.ve-tf/bin/python"
+    "python.venvPath": "${env:VIRTUAL_ENV}",
+    "python.pythonPath": "${env:VIRTUAL_ENV}/bin/python"
 }
 ```
