@@ -3,7 +3,7 @@
 ## Workspace settings
 - file: ${workspaceFolder}/.vscode/settings.json
 - settings menu: File > Preferences > Settings [Ctrl+']
-- settings for python virtualenv
+- settings for python virtualenv (need to do "export VIRTUAL_ENV='~/.ve-tf'")
 ```js
 {
     "python.envFile": "${workspaceFolder}/.env",
