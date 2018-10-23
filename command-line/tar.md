@@ -71,6 +71,7 @@ tar -rvf $NAME.tar $FILEs $DIRs
 
 ### tar options
 
+```txt
 -c – create a archive file.
 -x – extract a archive file.
 -v – show the progress of archive file.
@@ -81,6 +82,7 @@ tar -rvf $NAME.tar $FILEs $DIRs
 -r – append or update files or directories to existing archive file.
 -W – Verify a archive file.
 --wildcards – Specify patterns in unix tar command.
+```
 
 ```sh
 # list content
@@ -89,9 +91,11 @@ tar -tvf $FILE
 
 ### overwrite
 
+```txt
 -k – keep old files. it reports an error.(--keep-old-files)
 --overwrite – overwrite existing files and to follow existing symbolic links when extracting/
 --skip-old-files – silently skip extracting over existing files
+```
 
 ### gzip
 
