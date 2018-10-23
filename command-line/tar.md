@@ -71,22 +71,28 @@ tar -rvf $NAME.tar $FILEs $DIRs
 
 ### tar options
 
-- c – create a archive file.
-- x – extract a archive file.
-- k – keep old files.
-- v – show the progress of archive file.
-- f – filename of archive file.
-- t – viewing content of archive file.
-- j – filter archive through bzip2.
-- z – filter archive through gzip.
-- r – append or update files or directories to existing archive file.
-- W – Verify a archive file.
-- wildcards – Specify patterns in unix tar command.
+-c – create a archive file.
+-x – extract a archive file.
+-v – show the progress of archive file.
+-f – filename of archive file.
+-t – viewing content of archive file.
+-j – filter archive through bzip2.
+-z – filter archive through gzip.
+-r – append or update files or directories to existing archive file.
+-W – Verify a archive file.
+--wildcards – Specify patterns in unix tar command.
 
 ```sh
 # list content
 tar -tvf $FILE
 ```
+
+### overwrite
+
+-k – keep old files. it reports an error.(--keep-old-files)
+--overwrite – overwrite existing files and to follow existing symbolic links when extracting/
+--skip-old-files – silently skip extracting over existing files
+
 ### gzip
 
 ```sh
@@ -100,4 +106,3 @@ gzip -d test.tar.gz
 # tar.bz2 to tar
 bzip2 -d test.tar.bz2
 ```
-
